@@ -1,0 +1,23 @@
+.mdl-grid.centerElement
+	.mdl-cell.mdl-cell--4-col
+		.mdl-card
+			.mdl-card__title
+				h3 {{ title }}
+			.mdl-card_actions
+				form(action="\signup" method="POST")
+					.mdl-cell.mdl-cell--8-col
+						.mdl-textfield.mdl-js-textfield
+							input.mdl-textfield__input(type="text" name="userName" id="username")
+							label.mdl-textfield__label(for="username") User Name
+					.mdl-cell.mdl-cell--8-col
+						.mdl-textfield.mdl-js-textfield
+							input.mdl-textfield__input(type="password" name="passWord" id="password")
+							label.mdl-textfield__label(for="password") Password
+					.mdl-cell.mdl-cell--8-col
+						h6 #{message}
+					.mdl-cell
+						button.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--colored Signup  
+				.mdl-cell
+					form(action="#signin")
+						button.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--colored Signin  
+	.mdl-cell.mdl-cell--4-

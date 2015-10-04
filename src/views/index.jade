@@ -1,0 +1,29 @@
+doctype html
+html
+	head
+		title #{title}
+		include ./includes/styles
+	body
+		div(ng-app='quiz-app')
+			.mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+				header.mdl-layout__header
+					.mdl-layout__header-row
+						span.mdl-layout-title #{title}
+						.mdl-layout-spacer
+						nav.mdl-navigation.mdl-layout--large-screen-only
+							a.mdl-navigation__link(href="/") Home
+							a.mdl-navigation__link(href="#users") Users
+				.mdl-layout__drawer
+					span.mdl-layout-title #{title}
+					nav.mdl-navigation.mdl-layout--large-screen-only
+						a.mdl-navigation__link(href="/") Home
+						a.mdl-navigation__link(href="#users") Users
+				.mdl-layout__content
+					div(ng-view)
+				footer.mdl-mini-footer
+					.mdl-mini-footer--left-selection
+						.mdl-logo
+						ul.mdl-mini-footer--link-list
+							li
+								a(href="#")
+		include ./includes/scripts

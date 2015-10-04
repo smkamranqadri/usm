@@ -1,0 +1,14 @@
+{
+  "name": "ums",
+  "version": "1.0.0",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "Material Design Icon": "material-design-icon#~0.1.1",
+    "material-design-lite": "~1.0.5"
+  }
+}
